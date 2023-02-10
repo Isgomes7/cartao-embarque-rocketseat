@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap");
+/* line 4, ../scss/home.scss */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(84deg, #8257E5, #271A45);
+}
+
+/* line 10, ../scss/home.scss */
+main {
+  width: 100%;
+}
+/* line 13, ../scss/home.scss */
+main h1 {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+/* line 19, ../scss/home.scss */
+main .card {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+/* line 23, ../scss/home.scss */
+main .card .background {
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-radius: 24px;
+}
+/* line 28, ../scss/home.scss */
+main .card .background .right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+/* line 34, ../scss/home.scss */
+main .card .section-01 .row-01 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+/* line 38, ../scss/home.scss */
+main .card .section-01 .row-01 p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* line 42, ../scss/home.scss */
+main .card .section-01 .row-01 span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* line 47, ../scss/home.scss */
+main .card .section-01 .row-02 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 50, ../scss/home.scss */
+main .card .section-01 .row-02 h2 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 40px;
+}
+/* line 54, ../scss/home.scss */
+main .card .section-01 .row-02 span {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* line 60, ../scss/home.scss */
+main .card .section-01 .row-02 .right span::after {
+  content: '+1';
+  color: #000000;
+  font-weight: 500;
+  font-size: 10px;
+  position: relative;
+  top: -7px;
+  right: -3px;
+}
+/* line 74, ../scss/home.scss */
+main .section-02 .row-03 {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 80, ../scss/home.scss */
+main .section-03 .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+/* line 84, ../scss/home.scss */
+main .section-03 .top .left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* line 87, ../scss/home.scss */
+main .section-03 .top .left .purple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #633BBC;
+  padding: 4px 8px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 54px;
+  height: 27px;
+}
+/* line 96, ../scss/home.scss */
+main .section-03 .top .left .purple span {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* line 103, ../scss/home.scss */
+main .section-03 .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+/* line 106, ../scss/home.scss */
+main .section-03 .bottom p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* line 109, ../scss/home.scss */
+main .section-03 .bottom p span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* line 114, ../scss/home.scss */
+main .section-03 .bottom #timer {
+  display: flex;
+  gap: 5px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* line 119, ../scss/home.scss */
+main .section-03 .bottom #timer #minutes,
+main .section-03 .bottom #timer #seconds {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* line 128, ../scss/home.scss */
+.section-04 {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 133, ../scss/home.scss */
+.section-04 p {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 139, ../scss/home.scss */
+p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 144, ../scss/home.scss */
+span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}

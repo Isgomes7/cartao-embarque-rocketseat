@@ -1,0 +1,146 @@
+@import "mixin";
+@import "var";
+
+body {
+    @include flex(center, center);
+    height: 100vh;
+    background-image: linear-gradient(84deg, #8257E5, #271A45);
+}
+
+main {
+    width: 100%;
+
+    h1 {
+        @include flex('', center);
+        @include text('', $c-white, '', 500);
+        margin-bottom: $box-spacing;
+    }
+
+    .card {
+        max-width: 400px;
+        margin: 0 auto $trim;
+
+        .background {
+            background-color: $c-white;
+            padding: 32px;
+            border-radius: 24px;
+
+            .right {
+                @include flex(flex-end, '', column);
+            }
+        }
+
+        .section-01 {
+            .row-01 {
+                @include flex('', space-between);
+                margin-bottom: $trim;
+
+                p {
+                    @include text('', $c-black, '', 400, 14px);
+                }
+
+                span {
+                    @include text('', $c-black, '', 500, 16px);
+                }
+            }
+
+            .row-02 {
+                @include flex(center, space-between);
+
+                h2 {
+                    @include text('', $c-black, '', 500, 40px);
+                }
+
+                span {
+                    @include text('', $c-black, '', 400, 16px);
+                }
+
+                .right {
+                    span {
+                        &::after {
+                            content: '+1';
+                            @include text('', $c-black, '', 500, 10px);
+                            position: relative;
+                            top: -7px;
+                            right: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-02 {
+        .row-03 {
+            @include flex('', space-between);
+        }
+    }
+
+    .section-03 {
+        .top {
+            @include flex('', space-between);
+            margin-bottom: $trim;
+
+            .left {
+                @include flex('', space-between, column);
+
+                .purple {
+                    @include flex(center, center);
+                    background-color: $c-purple;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    width: 100%;
+                    max-width: 54px;
+                    height: 27px;
+
+                    span {
+                        @include text('', $c-white, '', 500, 16px);
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            @include flex('', center, '', $small);
+
+            p {
+                @include text('', $c-black, '', 400, 16px);
+
+                span {
+                    @include text('', $c-black, '', 500, 16px)
+                }
+            }
+
+            #timer {
+                @include flex('', '', '', $small);
+
+                @include text('', $c-black, '', 500, 16px);
+
+                #minutes,
+                #seconds {
+                    @include text('', $c-black, '', 500, 16px)
+                }
+            }
+        }
+    }
+}
+
+.section-04 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+
+    p {
+        @include text('', $c-white, center, 400, 14px);
+    }
+}
+
+
+p {
+    @include text('', $c-black, '', 400, 14px);
+}
+
+
+span {
+    @include text('', $c-black, '', 500, 16px);
+}
